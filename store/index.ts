@@ -4,11 +4,14 @@ import { composeWithDevTools } from 'redux-devtools-extension'; // Opcional: Par
 
 import counterReducer from './reducers/counterReducer';
 import userReducer from './reducers/userReducer';
+import themeReducer from './reducers/themeReducer';
+import { lightTheme } from '../src/themes/themes';
 
 // Combina todos los reducers en un rootReducer
 const rootReducer = combineReducers({
   counter: counterReducer,
   user: userReducer,
+  theme: themeReducer,
   // Otros reducers si los tienes
 });
 
